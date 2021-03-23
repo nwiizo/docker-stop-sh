@@ -1,0 +1,4 @@
+sudo docker ps -aq | xargs sudo docker stop
+sudo docker ps -aq | xargs sudo docker rm
+sudo docker network ls -q | xargs sudo docker network rm
+sudo service docker stop
